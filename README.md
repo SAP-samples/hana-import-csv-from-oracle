@@ -28,7 +28,9 @@ Setup and configuration details may be found in the [create-users.txt](src/creat
 ## Download and Installation
 The files listed below are used mostly in the order they appear.  Please note that you will need to make adjustments to directories and databases schemas to match your environment.
 
-### Getting started
+### Configuration and Setup scripts
+
+Use these scripts to setup the necessary database users and make adjustments to the Oracle environment.
 
 | File | Description |
 | ---- | ----------- |
@@ -36,30 +38,32 @@ The files listed below are used mostly in the order they appear.  Please note th
 | create-user.txt | Grants needed in the Oracle and HANA databases.  Also includes links to useful links.|
 | create-tables.sql | Create the tables supporting the process.|
 
-### Installing the software
+### Oracle PL/SQL package and Linux scripts
+
+Install the main Oracle PL/SQL package (.pls/.plb) in the Oracle database and position the Linux scripts as appropriate for the target environment
 
 | File | Description |
 | ---- | ----------- |
-CSV_EXPORTER.pls | Oracle package specification.  Note: there are some global variables in the package specification that must be adjusted.
-CSV_EXPORTER.plb | Oracle package body.
-csv_exporter.sh | Linux script placed on the Oracle server to zip-n-ship the CSV output for a table.
-csv_launch.sh | Linux script on the HANA server that is call by the csv_exporter.sh to start a HANA import.
-csv_loader.sh | Linux script on the HANA server to perform the HANA import.
+|CSV_EXPORTER.pls | Oracle package specification.  Note: there are some global variables in the package specification that must be adjusted.
+|CSV_EXPORTER.plb | Oracle package body.
+|csv_exporter.sh | Linux script placed on the **Oracle server** to zip-n-ship the CSV output for a table.
+|csv_launch.sh | Linux script on the **SAP HANA server** that is call by the csv_exporter.sh to start a HANA import.
+|csv_loader.sh | Linux script on the **SAP HANA server** to perform the HANA import.
 
 ### Running tests
+
+These samples demonstrate creating and running a job.
 
 | File | Description |
 | ---- | ----------- |
 | sample-job.sql | Example of building and running an export of a schema. |
 | stop-job.sql | Example of stopping a running job. |
-| load-blob-from-oracle-dir.sql | Quick script to load a BLOB to test exporting to CSV. |
-| build-data.sql | Example script to create 100 tables to export with 150K to 1M rows per table. |
 
 ## Known Issues
 There are no known issues.
 
 ## How to obtain support
-This code is provided "as-is" with no expected changes or support.  Questions or comments should be directed directly to [Mark Greynolds](mailto:mark.greynolds@sap.com?subject=Oracle%20CSV%20exporter&body=Question%20or%20comment%20on%20the%20Orace%20CSV%20to%20SAP%20HANA%20export%20tool).
+This code is provided **"as-is"** with no expected changes or support.  Questions or comments should be directed directly to [Mark Greynolds](mailto:mark.greynolds@sap.com?subject=Oracle%20CSV%20exporter&body=Question%20or%20comment%20on%20the%20Orace%20CSV%20to%20SAP%20HANA%20export%20tool).
 
 ## Contributing
 This project is only updated by SAP employees and accepts no other contributions.
