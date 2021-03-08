@@ -1,6 +1,9 @@
-# Title
+# CSV from Oracle
 
 ## Description
+This tool uses features of the SAP HANA and Oracle databases to move tables from Oracle to SAP HANA as flat files, i.e., CSV.
+
+To better visualize the entires process, this flowchart hightlights some of the major processing steps:
 
 ## Requirements
 
