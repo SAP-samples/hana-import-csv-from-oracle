@@ -63,7 +63,7 @@ These samples demonstrate creating and running a job.
 There are no known issues.
 
 ## How to obtain support
-This code is provided **"as-is"** with no expected changes or support.  Questions or comments should be directed directly to [Mark Greynolds](mailto:mark.greynolds@sap.com?subject=Oracle%20CSV%20exporter&body=Question%20or%20comment%20on%20the%20Orace%20CSV%20to%20SAP%20HANA%20export%20tool).
+This code is provided **"as-is"** with no expected changes or support.  Questions or comments should be directed to [Mark Greynolds](mailto:mark.greynolds@sap.com?subject=Oracle%20CSV%20exporter&body=Question%20or%20comment%20on%20the%20Orace%20CSV%20to%20SAP%20HANA%20export%20tool).
 
 ## Contributing
 This project is only updated by SAP employees and accepts no other contributions.
