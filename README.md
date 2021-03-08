@@ -19,8 +19,8 @@ Steps 4 and 5 are clean-up jobs that constantly scan for and load log files gene
 
 ## Requirements
 * This project was developed and tested using Oracle RDBMS 12c and SAP HANA 2 SPS03.
-* Proper schema privileges must be granted to database users in both platforms.
-* To successfully run this project, the Oracle instance must be configured to allow access to operating system to both create files using UTL_FILE and execute scripts.
+* Proper schema privileges must be granted to database users on both platforms.
+* To successfully run this project, the Oracle instance must be configured to allow access to the operating system to both create files using UTL_FILE and execute scripts.
 * The SSH between the Oracle host and the SAP HANA host must be configured for certificate authentication - passwords must NOT be required.
 
 Setup and configuration details may be found in the [create-users.txt](src/create-users.txt) file.
@@ -34,7 +34,7 @@ Use these scripts to setup the necessary database users and make adjustments to 
 
 | File | Description |
 | ---- | ----------- |
-| flow.png | This is a detailed view of the major control elements of the process.|
+| images/flow.png | This is a detailed view of the major control elements of the process.|
 | create-user.txt | Grants needed in the Oracle and HANA databases.  Also includes links to useful links.|
 | create-tables.sql | Create the tables supporting the process.|
 
@@ -56,8 +56,8 @@ These samples demonstrate creating and running a job.
 
 | File | Description |
 | ---- | ----------- |
-| sample-job.sql | Example of building and running an export of a schema. |
-| stop-job.sql | Example of stopping a running job. |
+| tests/sample-job.sql | Example of building and running an export of a schema. |
+| tests/stop-job.sql | Example of stopping a running job. |
 
 ## Known Issues
 There are no known issues.
