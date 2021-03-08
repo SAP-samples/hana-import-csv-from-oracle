@@ -1,4 +1,4 @@
-# CSV from Oracle
+# SAP HANA import CSV files from Oracle
 
 ## Description
 This proof of concept uses features of both SAP HANA and Oracle databases to move tables from Oracle to SAP HANA as flat files, i.e., CSV.  To achieve the best possible performance, the tool create many threads to export tables to CSV, move them to the SAP HANA platform, and load them into an SAP HANA schema.
